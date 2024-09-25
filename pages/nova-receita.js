@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function NewPost() {
+export default function NovaReceita() {
   return (
     <>
-      <h1>Nova postagem</h1>
+      <h1>Nova Receita</h1>
       <Link href={"/"}>Voltar</Link>
     </>
   );

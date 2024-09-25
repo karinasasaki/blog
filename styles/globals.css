@@ -1,5 +1,11 @@
+:root {
+  --red: #9b4444; 
+}
+
 * {
   font: inherit;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -7,4 +13,8 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

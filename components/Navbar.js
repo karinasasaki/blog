@@ -1,11 +1,29 @@
 import Link from "next/link";
+import styles from "@/styles/Navbar.module.css";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   return (
-    <ul>
-      <li><Link href={"/"}>Home</Link></li>
-      <li><Link href={"/new-post"}>Novo post</Link></li>
-      <li><Link href={"/post/1"}>Post 1</Link></li>
-    </ul>
+    <nav className={styles.navbar}>
+      <Link href={"/"} className={styles.logo}>
+        <Image
+          src="/Logo.svg"
+          alt="Logo"
+          width={75}
+          height={75}
+        />
+        <span className={styles.logo__nome}>
+          Panelinha
+        </span>
+      </Link>
+      <Link href={"/nova-receita"} className={styles.adicionarReceita}>
+        <FontAwesomeIcon icon={faPlus}/>
+        <span>
+          Postar receita
+        </span>
+      </Link>
+    </nav>
   );
 }
