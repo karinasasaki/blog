@@ -1,0 +1,13 @@
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.8em;
+  padding: 1em 0;
+}
+
+.footer .dev {
+  font-size: 1em;
+  font-weight: bold;
+}

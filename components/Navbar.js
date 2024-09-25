@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "@/styles/Navbar.module.css";
+import styles from "@/styles/components/Navbar.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
