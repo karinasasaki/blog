@@ -1,5 +1,6 @@
+import Post from "@/components/Post";
 import Head from "next/head";
-import Link from "next/link";
+import styles from "@/styles/pages/Home.module.css"
 
 export default function Home() {
   return (
@@ -7,8 +8,12 @@ export default function Home() {
       <Head>
         <title>Panelinha</title>
       </Head>
-      <h1>Página inicial</h1>
-      <Link href={"/post/1"}>Post 1</Link>
+      <div className={styles.container}>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+      </div>
     </>
   );
 }

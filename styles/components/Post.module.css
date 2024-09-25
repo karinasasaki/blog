@@ -1,0 +1,11 @@
+.post {
+  border: 1px solid var(--red);
+  border-radius: 1em;
+  text-align: center;
+  padding: 1em;
+}
+
+.post__foto {
+  height: auto;
+  max-width: 100%;
+}
