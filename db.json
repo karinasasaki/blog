@@ -1,0 +1,51 @@
+{
+  "receitas": [
+    {
+      "id": 1,
+      "data": "24/09/2024",
+      "titulo": "Bolo de paçoca",
+      "autor": "Rita Lobo",
+      "ingredientes": [
+        "5 paçocas de rolha",
+        "1½ xícara (chá) de farinha de trigo",
+        "2 colheres (chá) de fermento em pó",
+        "3 ovos",
+        "1 xícara (chá) de açúcar",
+        "1 xícara (chá) de leite",
+        "⅓ de xícara (chá) de óleo",
+        "1 pitada de sal",
+        "manteiga e farinha de trigo para untar e polvilhar a fôrma"
+      ],
+      "comoFazer": [
+        "Preaqueça o forno a 180 °C (temperatura média). Unte com manteiga uma forma redonda com furo no meio de 24 cm de diâmetro. Polvilhe com farinha, chacoalhe para espalhar e bata bem na pia para retirar o excesso.",
+        "Numa tigela, misture a farinha com o fermento e reserve – assim o fermento se distribui melhor na massa e você evita mexer demasiadamente a massa.",
+        "Numa tigela pequena quebre um ovo de cada vez e transfira para o liquidificador – se um estiver estragado você não perde a receita. Junte o leite, o óleo, o açúcar, o sal e bata bem até ficar liso. Adicione as paçocas e bata no modo pulsar, para misturar sem triturar totalmente – assim o bolo fica com pedacinhos da paçoca.",
+        "Transfira a mistura líquida para uma tigela grande. Adicione a farinha com o fermento em 3 etapas, passando pela peneira. Misture delicadamente com o batedor de arame a cada adição para incorporar.",
+        "Transfira a massa do bolo para a forma untada e leve ao forno para assar por cerca de 45 minutos. Para verificar: espete um palito na massa, se sair seco está pronto, do contrário, deixe assar por mais alguns minutos. Enquanto isso, cozinhe o doce de leite da cobertura.",
+        "Assim que estiver assado, retire o bolo do forno e espere amornar por 30 minutos para desenformar. Espere esfriar completamente antes de colocar a cobertura e servir."
+      ],
+      "urlFoto": "https://i.panelinha.com.br/i1/64-bk-6495-cp-2021-31-08-7813.webp"
+    },
+    {
+      "id": 2,
+      "data": "25/09/2024",
+      "titulo": "Brigadeiro especial",
+      "autor": "Rita Lobo",
+      "ingredientes": [
+        "1 lata de leite condensado (395 g)",
+        "50 g de chocolate amargo (70% ou 85% cacau)",
+        "2½ colheres (sopa) de manteiga",
+        "1 xícara (chá) de granulado"
+      ],
+      "comoFazer": [
+        "Com as mãos, quebre o chocolate em pedaços e transfira para uma panela média. Junte o leite condensado e a manteiga.",
+        "Leve a panela ao fogo baixo e mexa com uma espátula por cerca de 12 minutos até dar o ponto: o brigadeiro começa a ficar mais cremoso, até engrossar e soltar do fundo da panela – o tempo pode variar de acordo com a chama do seu fogão, o tamanho e material da sua panela.",
+        "Transfira o brigadeiro para um prato fundo (ou travessa) e deixe esfriar – raspe bem a panela com a espátula para aproveitar toda a massa. Deixe a massa de brigadeiro esfriar completamente antes de enrolar (se preferir, prepare a massa no dia anterior e cubra com filme depois de fria).",
+        "Para enrolar e confeitar os brigadeiros: abra 30 forminhas de papel (número 4); preencha um prato fundo com o granulado e separe uma tigela pequena com água filtrada para umedecer as mãos.",
+        "Unte as mãos com um pouco de água – assim o granulado gruda melhor no brigadeiro. Com uma colher de chá, retire uma porção da massa, enrole numa bolinha e transfira para o prato com granulado. Faça de uma só vez quantos brigadeiros couberem no prato.",
+        "Passe os brigadeiros pelo granulado para cobrir toda a superfície e transfira para as forminhas. Repita até a massa acabar, se preferir, convoque alguém da família: enquanto um enrola os brigadeiros, o outro passa no granulado. Sirva a seguir."
+      ],
+      "urlFoto": "https://i.panelinha.com.br/i1/64-bk-2873-briga1.webp"
+    }
+  ]
+}

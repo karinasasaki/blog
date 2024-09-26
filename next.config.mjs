@@ -2,8 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["i.panelinha.com.br"],
-  },
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.panelinha.com.br",
+        pathname: "**",
+      }
+    ]
+  }
 };
 
 export default nextConfig;

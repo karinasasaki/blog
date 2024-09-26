@@ -13,6 +13,7 @@ export default function Navbar() {
           alt="Logo"
           width={75}
           height={75}
+          priority
         />
         <span className={styles.logo__nome}>
           Panelinha
