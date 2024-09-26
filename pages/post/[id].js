@@ -16,7 +16,7 @@ export default function Post() {
           method: "GET"
         }
       });
-      if (response) {
+      if (response.ok) {
         const data = await response.json();
         setReceita(data);
       }
@@ -26,30 +26,38 @@ export default function Post() {
   }
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    if (id) {
+      fetchData();
+    }
+  }, [id]);
 
-  return (
-    <>
-      <Head>
-        <title>Panelinha - {receita?.titulo}</title>
-      </Head>
-      <h1>{receita?.titulo}</h1>
-      <p>Data da postagem: {receita?.data}</p>
-      <p>Autor(a): {receita?.autor}</p>
-      <h2>Ingredientes:</h2>
-      <ul>
-        {receita?.ingredientes.map(ingrediente => {
-          return <li key={ingrediente}>{ingrediente}</li>
-        })}
-      </ul>
-      <h2>Modo de preparo:</h2>
-      <ol>
-        {receita?.comoFazer.map(modo => {
-          return <li key={modo}>{modo}</li>
-        })}
-      </ol>
-      <Link href={"/"}>Voltar</Link>
-    </>
-  );
+  if (!!receita) {
+    return (
+      <>
+        <Head>
+          <title>Panelinha - {receita?.titulo}</title>
+        </Head>
+        <h1>{receita?.titulo}</h1>
+        <p>Data da postagem: {receita?.data}</p>
+        <p>Autor(a): {receita?.autor}</p>
+        <h2>Ingredientes:</h2>
+        <ul>
+          {receita?.ingredientes?.map(ingrediente => {
+            return <li key={ingrediente}>{ingrediente}</li>
+          })}
+        </ul>
+        <h2>Modo de preparo:</h2>
+        <ol>
+          {receita?.comoFazer?.map(modo => {
+            return <li key={modo}>{modo}</li>
+          })}
+        </ol>
+        <Link href={"/"}>Voltar</Link>
+      </>
+    );
+  } else {
+    return (
+      <p>Receita não encontrada.</p>
+    )
+  }
 }
