@@ -1,33 +1,15 @@
 import Head from "next/head";
 import styles from "@/styles/pages/Home.module.css"
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
-  const [receitas, setReceitas] = useState();
+export async function getStaticProps() {
+  const response = await fetch("http://localhost:3001/receitas");
+  const receitas = await response.json();
+  return { props: {receitas} }
+}
 
-  const fetchData = async() => {
-    try {
-      const response = await fetch("http://localhost:3001/receitas", {
-        header: {
-          Accept: "application/json",
-          method: "GET"
-        }
-      });
-      if (response) {
-        const data = await response.json();
-        setReceitas(data);
-      }
-    } catch (error) {
-      alert(error);
-    }
-  }
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
+export default function Home({ receitas }) {
   return (
     <>
       <Head>
