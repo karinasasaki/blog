@@ -1,3 +1,9 @@
 .main {
-  padding: 2em 10em 5em 10em;
+  padding: 2rem 10rem 3rem;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 2rem 4rem 3rem;
+  }
 }

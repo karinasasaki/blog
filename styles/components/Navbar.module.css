@@ -6,7 +6,7 @@
   align-items: center;
   background-color: var(--red);
   color: white;
-  padding: 1em 4em;
+  padding: 1rem 4rem;
 }
 
 .logo {
@@ -16,22 +16,25 @@
 
 .logo__nome {
   font-family: "Handlee", cursive;
-  font-size: 2em;
-  padding: 0.3em 0 0 0.3em ;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.3rem 0 0 0.3rem ;
 }
 
-.novoPost {
+.botao {
   background-color: white;
   color: black;
-  padding: 1em 2em;
-  border-radius: 2em;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
   transition: 0.3s;
+  border: 4px solid var(--red);
 }
 
-.novoPost:hover {
+.botao:hover {
   background-color: #eeeeee;
+  border: 4px solid var(--darkRed);
 }
 
-.novoPost span {
-  padding-left: 0.5em;
+.botao span {
+  padding-left: 0.5rem;
 }

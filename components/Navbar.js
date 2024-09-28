@@ -11,8 +11,8 @@ export default function Navbar() {
         <Image
           src="/Logo.svg"
           alt="Logo"
-          width={75}
-          height={75}
+          width={60}
+          height={60}
           priority
         />
         <span className={styles.logo__nome}>
@@ -20,7 +20,7 @@ export default function Navbar() {
         </span>
       </Link>
 
-      <Link href={"/novo-post"} className={styles.novoPost}>
+      <Link href={"/novo-post"} className={styles.botao}>
         <FontAwesomeIcon icon={faPlus}/>
         <span>
           Novo Post

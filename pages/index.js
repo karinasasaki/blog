@@ -9,19 +9,36 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  function getNomeSobrenome(nomeCompleto) {
+    let arrayNomeCompleto = nomeCompleto.split(" ");
+    const primeiroNome = arrayNomeCompleto[0];
+    const ultimoNome = arrayNomeCompleto[arrayNomeCompleto.length - 1];
+    return primeiroNome + " " + ultimoNome;
+  }
   return (
     <>
       <Head>
         <title>BlogPost</title>
       </Head>
-      <div className={styles.container}>
-        {posts?.map(post => {
-          return <Link key={post?.id} href={`/post/${post?.id}`} className={styles.post}>
-            <h1>{post?.titulo}</h1>
-            <p>{post?.resumo}</p>
-          </Link>
-        })}
-      </div>
+      {posts?.map(post => {
+        return (
+          <div key={post?.id} className={styles.post}>
+            <h2 className={styles.post__titulo} title={post?.titulo}>
+              <Link href={`/post/${post?.id}`}>
+                {post?.titulo}
+              </Link>
+            </h2>
+            <div className={styles.post__info}>
+              <span>Postado dia {post?.data}</span>
+              <span className={styles.post__info__separador}>&bull;</span>
+              <span>Autor(a): {post?.autor === "" ? "Desconhecido" : getNomeSobrenome(post.autor)}</span>
+            </div>
+            <p className={styles.post__resumo}>{post?.conteudo}</p>
+            <Link href={`/post/${post?.id}`}>
+              <span className={styles.post__link}>Leia mais →</span>
+            </Link>
+          </div>
+      )})}
     </>
   );
 }

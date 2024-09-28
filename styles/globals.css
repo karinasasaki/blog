@@ -1,9 +1,11 @@
 :root {
-  --red: #9b4444; 
+  --red: #9b4444;
+  --darkRed: #5c2121;
+  --lightGray: #8f8f8f;
+  --darkGray: #3f3f3f;
 }
 
 * {
-  font: inherit;
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
