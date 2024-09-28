@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 export async function getStaticProps({ params }) {
   const response = await fetch(`http://localhost:3001/post/${params.id}`);
@@ -23,6 +23,11 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ post }) {
+  const router = useRouter();
+  const handleVoltar = () => {
+    router.back();
+  }
+
   return (
     <>
       <Head>
@@ -32,7 +37,7 @@ export default function Post({ post }) {
       <p>Data da postagem: {post?.data}</p>
       <p>Autor(a): {post?.autor === "" ? "Desconhecido" : post.autor}</p>
       <p>Conteúdo: {post?.conteudo}</p>
-      <Link href={"/"}>Voltar</Link>
+      <button onClick={handleVoltar}>Voltar</button>
     </>
   );
 }

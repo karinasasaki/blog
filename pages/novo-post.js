@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
@@ -33,6 +32,10 @@ export default function NovoPost() {
     if (response.ok) {
       router.push("/");
     }
+  }
+
+  const handleVoltar = () => {
+    router.back();
   }
 
   return (
@@ -76,7 +79,7 @@ export default function NovoPost() {
 
         <button type="submit">Postar</button>
       </form>
-      <Link href={"/"}>Voltar</Link>
+      <button onClick={handleVoltar}>Voltar</button>
     </>
   );
 }
