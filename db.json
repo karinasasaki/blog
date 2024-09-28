@@ -1,51 +1,44 @@
 {
-  "receitas": [
+  "post": [
     {
-      "id": 1,
-      "data": "24/09/2024",
-      "titulo": "Bolo de paçoca",
-      "autor": "Rita Lobo",
-      "ingredientes": [
-        "5 paçocas de rolha",
-        "1½ xícara (chá) de farinha de trigo",
-        "2 colheres (chá) de fermento em pó",
-        "3 ovos",
-        "1 xícara (chá) de açúcar",
-        "1 xícara (chá) de leite",
-        "⅓ de xícara (chá) de óleo",
-        "1 pitada de sal",
-        "manteiga e farinha de trigo para untar e polvilhar a fôrma"
-      ],
-      "comoFazer": [
-        "Preaqueça o forno a 180 °C (temperatura média). Unte com manteiga uma forma redonda com furo no meio de 24 cm de diâmetro. Polvilhe com farinha, chacoalhe para espalhar e bata bem na pia para retirar o excesso.",
-        "Numa tigela, misture a farinha com o fermento e reserve – assim o fermento se distribui melhor na massa e você evita mexer demasiadamente a massa.",
-        "Numa tigela pequena quebre um ovo de cada vez e transfira para o liquidificador – se um estiver estragado você não perde a receita. Junte o leite, o óleo, o açúcar, o sal e bata bem até ficar liso. Adicione as paçocas e bata no modo pulsar, para misturar sem triturar totalmente – assim o bolo fica com pedacinhos da paçoca.",
-        "Transfira a mistura líquida para uma tigela grande. Adicione a farinha com o fermento em 3 etapas, passando pela peneira. Misture delicadamente com o batedor de arame a cada adição para incorporar.",
-        "Transfira a massa do bolo para a forma untada e leve ao forno para assar por cerca de 45 minutos. Para verificar: espete um palito na massa, se sair seco está pronto, do contrário, deixe assar por mais alguns minutos. Enquanto isso, cozinhe o doce de leite da cobertura.",
-        "Assim que estiver assado, retire o bolo do forno e espere amornar por 30 minutos para desenformar. Espere esfriar completamente antes de colocar a cobertura e servir."
-      ],
-      "urlFoto": "https://i.panelinha.com.br/i1/64-bk-6495-cp-2021-31-08-7813.webp"
+      "titulo": "Os Benefícios da Meditação para a Saúde Mental",
+      "autor": "Ana Silva",
+      "resumo": "Este post explora como a meditação pode ajudar a reduzir a ansiedade e melhorar o bem-estar emocional.",
+      "conteudo": "A meditação tem se mostrado uma prática eficaz para promover a saúde mental. Estudos demonstram que a meditação regular pode diminuir os níveis de estresse e ansiedade, melhorar a concentração e aumentar a sensação de felicidade. Neste artigo, discutiremos diferentes técnicas de meditação e como incorporá-las na rotina diária.",
+      "data": "28/09/2024",
+      "id": 1
     },
     {
-      "id": 2,
-      "data": "25/09/2024",
-      "titulo": "Brigadeiro especial",
-      "autor": "Rita Lobo",
-      "ingredientes": [
-        "1 lata de leite condensado (395 g)",
-        "50 g de chocolate amargo (70% ou 85% cacau)",
-        "2½ colheres (sopa) de manteiga",
-        "1 xícara (chá) de granulado"
-      ],
-      "comoFazer": [
-        "Com as mãos, quebre o chocolate em pedaços e transfira para uma panela média. Junte o leite condensado e a manteiga.",
-        "Leve a panela ao fogo baixo e mexa com uma espátula por cerca de 12 minutos até dar o ponto: o brigadeiro começa a ficar mais cremoso, até engrossar e soltar do fundo da panela – o tempo pode variar de acordo com a chama do seu fogão, o tamanho e material da sua panela.",
-        "Transfira o brigadeiro para um prato fundo (ou travessa) e deixe esfriar – raspe bem a panela com a espátula para aproveitar toda a massa. Deixe a massa de brigadeiro esfriar completamente antes de enrolar (se preferir, prepare a massa no dia anterior e cubra com filme depois de fria).",
-        "Para enrolar e confeitar os brigadeiros: abra 30 forminhas de papel (número 4); preencha um prato fundo com o granulado e separe uma tigela pequena com água filtrada para umedecer as mãos.",
-        "Unte as mãos com um pouco de água – assim o granulado gruda melhor no brigadeiro. Com uma colher de chá, retire uma porção da massa, enrole numa bolinha e transfira para o prato com granulado. Faça de uma só vez quantos brigadeiros couberem no prato.",
-        "Passe os brigadeiros pelo granulado para cobrir toda a superfície e transfira para as forminhas. Repita até a massa acabar, se preferir, convoque alguém da família: enquanto um enrola os brigadeiros, o outro passa no granulado. Sirva a seguir."
-      ],
-      "urlFoto": "https://i.panelinha.com.br/i1/64-bk-2873-briga1.webp"
+      "titulo": "10 Dicas para Melhorar sua Produtividade no Trabalho",
+      "autor": "João Pereira",
+      "resumo": "Aprenda estratégias simples e eficazes para aumentar sua produtividade e alcançar suas metas profissionais.",
+      "conteudo": "A produtividade é essencial para o sucesso profissional. Neste post, vamos compartilhar 10 dicas práticas que você pode implementar imediatamente, como a técnica Pomodoro, a definição de metas SMART e a importância de pausas regulares. Descubra como pequenas mudanças podem fazer uma grande diferença no seu dia a dia.",
+      "data": "28/09/2024",
+      "id": 2
+    },
+    {
+      "titulo": "A Importância da Sustentabilidade na Moda",
+      "autor": "Carla Mendes",
+      "resumo": "Este artigo aborda a crescente preocupação com a sustentabilidade na indústria da moda e como os consumidores podem fazer escolhas conscientes.",
+      "conteudo": "A moda é uma das indústrias mais poluentes do mundo. No entanto, a conscientização sobre a sustentabilidade está crescendo, e muitas marcas estão adotando práticas mais ecológicas. Vamos explorar as principais iniciativas de sustentabilidade na moda, dicas para consumidores e como você pode contribuir para um futuro mais sustentável.",
+      "data": "28/09/2024",
+      "id": 3
+    },
+    {
+      "titulo": "Como a Tecnologia Está Mudando o Ensino",
+      "autor": "",
+      "resumo": "Descubra as inovações tecnológicas que estão transformando a educação e o aprendizado.",
+      "conteudo": "A tecnologia tem desempenhado um papel fundamental na modernização do ensino. Neste post, discutiremos ferramentas digitais, plataformas de aprendizado online e o impacto da inteligência artificial na educação. Também abordaremos os desafios e oportunidades que essas mudanças trazem para alunos e educadores.",
+      "data": "28/09/2024",
+      "id": 4
+    },
+    {
+      "titulo": "Viajar Sozinho: Benefícios e Dicas",
+      "autor": "Fernanda Costa",
+      "resumo": "Aprenda sobre os benefícios de viajar sozinho e como tornar a experiência inesquecível.",
+      "conteudo": "Viajar sozinho pode ser uma das experiências mais libertadoras e enriquecedoras da vida. Neste artigo, falaremos sobre os benefícios de explorar o mundo por conta própria, desde a autodescoberta até a liberdade de criar seu próprio itinerário. Também compartilharemos dicas práticas para quem está pensando em embarcar nessa aventura.",
+      "data": "28/09/2024",
+      "id": 5
     }
   ]
 }

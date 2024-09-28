@@ -1,32 +1,24 @@
 import Head from "next/head";
 import styles from "@/styles/pages/Home.module.css"
 import Link from "next/link";
-import Image from "next/image";
 
 export async function getStaticProps() {
-  const response = await fetch("http://localhost:3001/receitas");
-  const receitas = await response.json();
-  return { props: {receitas} }
+  const response = await fetch("http://localhost:3001/post");
+  const posts = await response.json();
+  return { props: {posts} }
 }
 
-export default function Home({ receitas }) {
+export default function Home({ posts }) {
   return (
     <>
       <Head>
-        <title>Panelinha</title>
+        <title>BlogPost</title>
       </Head>
       <div className={styles.container}>
-        {receitas?.map(receita => {
-          return <Link key={receita?.id} href={`/post/${receita?.id}`} className={styles.post}>
-            <Image
-              className={styles.post__foto}
-              src={receita?.urlFoto}
-              alt={receita?.titulo}
-              width={640}
-              height={427}
-              priority
-            />
-            <h1>{receita?.titulo}</h1>
+        {posts?.map(post => {
+          return <Link key={post?.id} href={`/post/${post?.id}`} className={styles.post}>
+            <h1>{post?.titulo}</h1>
+            <p>{post?.resumo}</p>
           </Link>
         })}
       </div>

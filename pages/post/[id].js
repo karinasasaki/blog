@@ -2,19 +2,19 @@ import Head from "next/head";
 import Link from "next/link";
 
 export async function getStaticProps({ params }) {
-  const response = await fetch(`http://localhost:3001/receitas/${params.id}`);
-  const receita = await response.json();
-  return { props: {receita} }
+  const response = await fetch(`http://localhost:3001/post/${params.id}`);
+  const post = await response.json();
+  return { props: {post} }
 }
 
 export async function getStaticPaths() {
-  const response = await fetch("http://localhost:3001/receitas")
+  const response = await fetch("http://localhost:3001/post")
   const data = await response.json()
 
-  const paths = data.map((receita) => {
+  const paths = data.map((post) => {
     return {
       params: {
-        id: `${receita.id}`,
+        id: `${post.id}`,
       },
     }
   })
@@ -22,27 +22,16 @@ export async function getStaticPaths() {
   return { paths, fallback: false }
 }
 
-export default function Post({ receita }) {
+export default function Post({ post }) {
   return (
     <>
       <Head>
-        <title>Panelinha - {receita?.titulo}</title>
+        <title>Post - {post?.titulo}</title>
       </Head>
-      <h1>{receita?.titulo}</h1>
-      <p>Data da postagem: {receita?.data}</p>
-      <p>Autor(a): {receita?.autor}</p>
-      <h2>Ingredientes:</h2>
-      <ul>
-        {receita?.ingredientes?.map(ingrediente => {
-          return <li key={ingrediente}>{ingrediente}</li>
-        })}
-      </ul>
-      <h2>Modo de preparo:</h2>
-      <ol>
-        {receita?.comoFazer?.map(modo => {
-          return <li key={modo}>{modo}</li>
-        })}
-      </ol>
+      <h1>{post?.titulo}</h1>
+      <p>Data da postagem: {post?.data}</p>
+      <p>Autor(a): {post?.autor === "" ? "Desconhecido" : post.autor}</p>
+      <p>Conteúdo: {post?.conteudo}</p>
       <Link href={"/"}>Voltar</Link>
     </>
   );

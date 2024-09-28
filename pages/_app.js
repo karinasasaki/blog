@@ -11,9 +11,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta name="description" content="Panelinha - um blog de receitas."/>
+        <meta name="description" content="BlogPost - Um site de blog."/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="keywords" content="Receitas"/>
+        <meta name="keywords" content="Blog, Post"/>
         <link rel="icon" href="/Logo.svg"/>
       </Head>
       <Navbar/>

@@ -16,13 +16,14 @@ export default function Navbar() {
           priority
         />
         <span className={styles.logo__nome}>
-          Panelinha
+          BlogPost
         </span>
       </Link>
-      <Link href={"/nova-receita"} className={styles.adicionarReceita}>
+
+      <Link href={"/novo-post"} className={styles.novoPost}>
         <FontAwesomeIcon icon={faPlus}/>
         <span>
-          Postar receita
+          Novo Post
         </span>
       </Link>
     </nav>

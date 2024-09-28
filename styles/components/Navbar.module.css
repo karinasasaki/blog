@@ -20,7 +20,7 @@
   padding: 0.3em 0 0 0.3em ;
 }
 
-.adicionarReceita {
+.novoPost {
   background-color: white;
   color: black;
   padding: 1em 2em;
@@ -28,10 +28,10 @@
   transition: 0.3s;
 }
 
-.adicionarReceita:hover {
+.novoPost:hover {
   background-color: #eeeeee;
 }
 
-.adicionarReceita span {
+.novoPost span {
   padding-left: 0.5em;
 }
