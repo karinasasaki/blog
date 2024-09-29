@@ -12,9 +12,13 @@ export default function Home({ posts }) {
   function getNomeSobrenome(nomeCompleto) {
     let arrayNomeCompleto = nomeCompleto.split(" ");
     const primeiroNome = arrayNomeCompleto[0];
-    const ultimoNome = arrayNomeCompleto[arrayNomeCompleto.length - 1];
+    let ultimoNome = "";
+    if (arrayNomeCompleto.length > 1) {
+      ultimoNome = arrayNomeCompleto[arrayNomeCompleto.length - 1];
+    }
     return primeiroNome + " " + ultimoNome;
   }
+
   return (
     <>
       <Head>
