@@ -30,13 +30,13 @@
 .botaoVoltar {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background-color: var(--red);
-  color: white;
-  border: 0;
+  background-color: white;
+  color: var(--red);
+  border: 1px solid var(--red);
   border-radius: 0.2rem;
 }
 
 .botaoVoltar:hover {
   cursor: pointer;
-  background-color: var(--darkRed);
+  background-color: #eeeeee;
 }

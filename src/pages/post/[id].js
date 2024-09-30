@@ -2,8 +2,8 @@ import Head from "next/head";
 import { useRouter } from "next/compat/router";
 import styles from "@/src/styles/pages/Post.module.css"
 
-export async function getStaticProps({ params }) {
-  const response = await fetch(`http://localhost:3001/post/${params.id}`);
+export async function getStaticProps({ params: {id} }) {
+  const response = await fetch(`http://localhost:3001/post/${id}`);
   const post = await response.json();
   return { props: {post} }
 }
@@ -49,7 +49,7 @@ export default function Post({ post }) {
         <div className={styles.post__info}>
           <span>Postado dia {post?.data}</span>
           <span className={styles.post__info__separador}>&bull;</span>
-          <span>Autor(a): {post?.autor === "" ? "Desconhecido" : getNomeSobrenome(post.autor)}</span>
+          <span>Autor(a): {post?.autor === "" ? "Desconhecido" : getNomeSobrenome(post?.autor)}</span>
         </div>
         {post?.conteudo?.split("\n").map(paragrafo => {
           return <p key={paragrafo} className={styles.post__conteudo}>{paragrafo}</p>

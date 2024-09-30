@@ -1,4 +1,5 @@
 :root {
+  --lightRed: #eec3c3;
   --red: #9b4444;
   --darkRed: #5c2121;
   --lightGray: #8f8f8f;
@@ -19,4 +20,9 @@ a {
 body {
   position: relative;
   min-height: 100vh;
+  min-width: 500px;
+}
+
+textarea {
+  resize: none;
 }
