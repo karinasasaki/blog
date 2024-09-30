@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
+import { useRouter } from "next/compat/router";
 import { useState } from "react";
 
 export default function NovoPost() {
@@ -49,14 +49,14 @@ export default function NovoPost() {
         <input
           type="text"
           required
-          name="titulo"
+          id="titulo"
           onChange={(e) => setTitulo(e.target.value)}
         />
 
         <label htmlFor="autor">Autor(a)</label>
         <input
           type="text"
-          name="autor"
+          id="autor"
           onChange={(e) => setAutor(e.target.value)}
         />
 
@@ -64,7 +64,7 @@ export default function NovoPost() {
         <textarea
           type="text"
           required
-          name="resumo"
+          id="resumo"
           onChange={(e) => setResumo(e.target.value)}
           placeholder={""}
         />
@@ -73,7 +73,7 @@ export default function NovoPost() {
         <textarea
           type="text"
           required
-          name="conteudo"
+          id="conteudo"
           onChange={(e) => setConteudo(e.target.value)}
         />
 

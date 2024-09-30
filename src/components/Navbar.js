@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "@/styles/components/Navbar.module.css";
+import styles from "@/src/styles/components/Navbar.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <Link href={"/"} className={styles.logo}>
         <Image
-          src="/Logo.svg"
+          src="Logo.svg"
           alt="Logo"
           width={60}
           height={60}

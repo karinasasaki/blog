@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "@/styles/pages/Home.module.css"
+import styles from "@/src/styles/pages/Home.module.css"
 import Link from "next/link";
 
 export async function getStaticProps() {
