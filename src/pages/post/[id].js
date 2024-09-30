@@ -31,7 +31,7 @@ export default function Post({ post }) {
   return (
     <>
       <Head>
-        <title>Post - {post?.titulo}</title>
+        <title>{`Post - ${post?.titulo}`}</title>
       </Head>
       <h1>{post?.titulo}</h1>
       <p>Data da postagem: {post?.data}</p>
