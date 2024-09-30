@@ -1,0 +1,42 @@
+.post {
+  margin: 0 auto 1.8rem;
+  max-width: 1000px;
+}
+
+.post__titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.post__info {
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  color: var(--lightGray);
+  display: flex;
+}
+
+.post__info__separador {
+  margin: 0 0.3rem;
+  font-size: 0.9rem;
+}
+
+.post__conteudo {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: var(--darkGray);
+}
+
+.botaoVoltar {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--red);
+  color: white;
+  border: 0;
+  border-radius: 0.2rem;
+}
+
+.botaoVoltar:hover {
+  cursor: pointer;
+  background-color: var(--darkRed);
+}

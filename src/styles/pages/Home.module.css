@@ -6,6 +6,7 @@
 .post__titulo {
   font-size: 1.25rem;
   margin-bottom: 0.3rem;
+  line-height: 1.2;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -30,7 +31,7 @@
 
 .post__resumo {
   margin-bottom: 0.5rem;
-  line-height: 1.2rem;
+  line-height: 1.2;
   color: var(--darkGray);
   overflow: hidden;
   display: -webkit-box;
