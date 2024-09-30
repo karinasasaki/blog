@@ -60,15 +60,6 @@ export default function NovoPost() {
           onChange={(e) => setAutor(e.target.value)}
         />
 
-        <label htmlFor="resumo">Resumo</label>
-        <textarea
-          type="text"
-          required
-          id="resumo"
-          onChange={(e) => setResumo(e.target.value)}
-          placeholder={""}
-        />
-
         <label htmlFor="conteudo">Conteúdo</label>
         <textarea
           type="text"
