@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <Link href={"/"} className={styles.logo}>
         <Image
-          src="Logo.svg"
+          src="/Logo.svg"
           alt="Logo"
           width={60}
           height={60}
