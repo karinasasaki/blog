@@ -1,10 +1,10 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Footer from "@/src/components/Footer";
+import Navbar from "@/src/components/Navbar";
 import "@/styles/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Head from "next/head";
-import Main from "@/components/Main";
+import Main from "@/src/components/Main";
 config.autoAddCss = false;
 
 export default function App({ Component, pageProps }) {
