@@ -13,8 +13,8 @@ const mockData = {
 test("Post 1 details renders successfully", () => {
 	render(<Post post={mockData}/>);
 	expect(screen.getByRole("heading", {name: "Título"})).toBeInTheDocument();
-	expect(screen.getByText("Data da postagem: 28/09/2024"));
+	expect(screen.getByText("Postado dia 28/09/2024"));
 	expect(screen.getByText("Autor(a): Autor"));
-	expect(screen.getByText("Conteúdo: Conteúdo"));
+	expect(screen.getByText("Conteúdo"));
 	expect(screen.getByRole("button", {name: "Voltar"})).toBeInTheDocument();
 })
