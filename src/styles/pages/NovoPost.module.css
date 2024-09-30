@@ -32,7 +32,6 @@
 
 .form__input:focus-visible {
   border: 1px solid var(--red);
-  outline: none;
   outline: 3px solid var(--lightRed);
 }
 
@@ -58,9 +57,14 @@
   color: white;
   border: 0;
   border-radius: 0.2rem;
+  outline: 3px solid transparent;
 }
 
 .botaoPostar:hover {
   cursor: pointer;
   background-color: var(--darkRed);
+}
+
+.botaoPostar:focus-visible {
+  outline: 3px solid var(--lightRed);
 }
