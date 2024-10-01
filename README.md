@@ -4,7 +4,7 @@
 
 ## 💻 Proposta do projeto
 
-O BlogPost é um aplicativo de blog simples criado com Next.js. Os usuários podem visualizar uma lista de postagens na página principal. Também é possível adicionar novas postagens e visualizar a postagem completa detalhada.
+O BlogPost é um aplicativo de blog simples criado com Next.js. Os usuários podem visualizar uma lista de postagens na página principal. Também é possível adicionar novas postagens e visualizar a postagem completa detalhada. A persistência dos dados é realizada com uma API Fictícia (JSON Server).
 
 ## 🚀 Tecnologias
 
