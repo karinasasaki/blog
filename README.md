@@ -25,4 +25,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 👩‍💻 Instalação e execução
 
-Siga o tutorial disponibilizado na [Wiki](https://github.com/karinasasaki/blog/wiki/Tutorial-de-instala%C3%A7%C3%A3o-e-execu%C3%A7%C3%A3o).
+Siga o tutorial disponibilizado na [Wiki](https://github.com/karinasasaki/blog/wiki).
